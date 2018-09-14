@@ -28,9 +28,8 @@ public final class LookupSettings {
     private static final String TAG = LookupSettings.class.getSimpleName();
 
     /** Forward lookup providers */
-    public static final String FLP_GOOGLE = "Google";
     public static final String FLP_OPENSTREETMAP = "OpenStreetMap";
-    public static final String FLP_DEFAULT = FLP_GOOGLE;
+    public static final String FLP_DEFAULT = FLP_OPENSTREETMAP;
 
     /** People lookup providers */
     public static final String PLP_WHITEPAGES = "WhitePages";
@@ -82,7 +81,7 @@ public final class LookupSettings {
         String provider = getLookupProvider(context,
                 Settings.System.REVERSE_LOOKUP_PROVIDER, RLP_DEFAULT);
 
-        if ("Google".equals(provider)) {
+        if ("Gebeld".equals(provider)) {
             Settings.System.putString(context.getContentResolver(),
                     Settings.System.REVERSE_LOOKUP_PROVIDER, RLP_DEFAULT);
             provider = RLP_DEFAULT;
