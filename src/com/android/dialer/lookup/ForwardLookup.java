@@ -17,7 +17,6 @@
 package com.android.dialer.lookup;
 
 import com.android.dialer.calllog.ContactInfo;
-import com.android.dialer.lookup.google.GoogleForwardLookup;
 import com.android.dialer.lookup.openstreetmap.OpenStreetMapForwardLookup;
 
 import android.content.Context;
